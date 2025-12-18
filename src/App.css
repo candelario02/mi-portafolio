@@ -202,4 +202,62 @@ body {
   color: var(--text-gray);
   font-size: 0.75rem;
   text-align: center;
+}/* --- RESPONSIVE DESIGN (Celulares) --- */
+@media (max-width: 768px) {
+  
+  /* Centra el contenedor y ajusta el padding */
+  .portfolio-container {
+    width: 95%;
+    padding-bottom: 20px;
+  }
+
+  /* Cambia la dirección del Hero: Foto arriba, texto abajo */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 0;
+    gap: 30px;
+  }
+
+  /* Reduce el tamaño del nombre para que no se corte */
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    margin: 0 auto 25px auto;
+  }
+
+  /* Ajusta el tamaño del hexágono para pantallas pequeñas */
+  .hexagon-shape {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Centra los iconos de redes sociales */
+  .social-icons {
+    justify-content: center;
+  }
+
+  /* Las tarjetas de servicios pasan a ocupar todo el ancho */
+  .service-cards {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  /* Los botones de contacto se apilan verticalmente */
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .contact-box h3 {
+    font-size: 1.5rem;
+  }
 }
